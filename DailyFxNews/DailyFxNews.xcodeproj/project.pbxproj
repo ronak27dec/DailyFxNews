@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4435D0DD27481DD600E7A57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435D0DC27481DD600E7A57F /* AppDelegate.swift */; };
 		4435D0DF27481DD600E7A57F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435D0DE27481DD600E7A57F /* SceneDelegate.swift */; };
-		4435D0E127481DD600E7A57F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435D0E027481DD600E7A57F /* ViewController.swift */; };
-		4435D0E427481DD600E7A57F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4435D0E227481DD600E7A57F /* Main.storyboard */; };
 		4435D0E627481DD700E7A57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4435D0E527481DD700E7A57F /* Assets.xcassets */; };
 		4435D0E927481DD700E7A57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4435D0E727481DD700E7A57F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		4435D0D927481DD600E7A57F /* DailyFxNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFxNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4435D0DC27481DD600E7A57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4435D0DE27481DD600E7A57F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4435D0E027481DD600E7A57F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4435D0E327481DD600E7A57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4435D0E527481DD700E7A57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4435D0E827481DD700E7A57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4435D0EA27481DD700E7A57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 			children = (
 				4435D0DC27481DD600E7A57F /* AppDelegate.swift */,
 				4435D0DE27481DD600E7A57F /* SceneDelegate.swift */,
-				4435D0E027481DD600E7A57F /* ViewController.swift */,
-				4435D0E227481DD600E7A57F /* Main.storyboard */,
 				4435D0E527481DD700E7A57F /* Assets.xcassets */,
 				4435D0E727481DD700E7A57F /* LaunchScreen.storyboard */,
 				4435D0EA27481DD700E7A57F /* Info.plist */,
@@ -126,7 +120,6 @@
 			files = (
 				4435D0E927481DD700E7A57F /* LaunchScreen.storyboard in Resources */,
 				4435D0E627481DD700E7A57F /* Assets.xcassets in Resources */,
-				4435D0E427481DD600E7A57F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +130,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4435D0E127481DD600E7A57F /* ViewController.swift in Sources */,
 				4435D0DD27481DD600E7A57F /* AppDelegate.swift in Sources */,
 				4435D0DF27481DD600E7A57F /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +138,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4435D0E227481DD600E7A57F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4435D0E327481DD600E7A57F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4435D0E727481DD700E7A57F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +272,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DailyFxNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DailyFxNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
