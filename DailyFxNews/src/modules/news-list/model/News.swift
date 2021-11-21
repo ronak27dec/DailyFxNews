@@ -8,9 +8,5 @@
 import Foundation
 
 struct News: Decodable {
-    var breakingNews: String?
-    var topNews: [TopNews]?
-    var dailyBriefings: DailyBriefings?
-    var technicalAnalysis: [TechnicalAnalysis]?
-    var specialReport: [SpecialReport]?
+    var news: [DailyNews]?
 }

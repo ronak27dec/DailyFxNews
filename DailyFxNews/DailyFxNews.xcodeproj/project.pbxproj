@@ -32,6 +32,7 @@
 		44B51E07274A173400B88F2A /* Eu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B51E06274A173400B88F2A /* Eu.swift */; };
 		44B51E09274A179100B88F2A /* Asia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B51E08274A179100B88F2A /* Asia.swift */; };
 		44B51E0B274A17C400B88F2A /* Us.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B51E0A274A17C400B88F2A /* Us.swift */; };
+		44B51E0D274ABBC400B88F2A /* DailyNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B51E0C274ABBC400B88F2A /* DailyNews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		44B51E06274A173400B88F2A /* Eu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eu.swift; sourceTree = "<group>"; };
 		44B51E08274A179100B88F2A /* Asia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asia.swift; sourceTree = "<group>"; };
 		44B51E0A274A17C400B88F2A /* Us.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Us.swift; sourceTree = "<group>"; };
+		44B51E0C274ABBC400B88F2A /* DailyNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				44B51E06274A173400B88F2A /* Eu.swift */,
 				44B51E08274A179100B88F2A /* Asia.swift */,
 				44B51E0A274A17C400B88F2A /* Us.swift */,
+				44B51E0C274ABBC400B88F2A /* DailyNews.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				4435D0DD27481DD600E7A57F /* AppDelegate.swift in Sources */,
 				4435D10F2748B89400E7A57F /* SpecialReport.swift in Sources */,
 				44B51E0B274A17C400B88F2A /* Us.swift in Sources */,
+				44B51E0D274ABBC400B88F2A /* DailyNews.swift in Sources */,
 				4435D1132748C0E400E7A57F /* Serviceable.swift in Sources */,
 				4435D12E27496A8500E7A57F /* Parser.swift in Sources */,
 				4435D1092748B7C100E7A57F /* TopNews.swift in Sources */,

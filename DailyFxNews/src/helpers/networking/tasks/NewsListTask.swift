@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias NewsListResponse = (Result<News?, Error>) -> Void
+
 struct NewsListTask {
 
     private var service: Serviceable
@@ -31,30 +33,35 @@ struct NewsListTask {
         do {
             let parsedModel: News? = try parser.parse(for: News.self)
             return parsedModel
-        }
-        catch(let ex) {
+        } catch(let ex) {
             print("Parsing error: \(ex)")
             return nil
         }
     }
 
-    func fetchFxNews() {
+    func fetchFxNews(onCompletion: @escaping NewsListResponse) {
         guard let unwrappedRequest = request else {return}
         service.dispatch(with: unwrappedRequest) { result in
 
             switch result {
-                case .success(let newsData): handleResponseForSuccess(data: newsData)
-                case .failure(let error): handleResponseForFailure(error: error)
+                case .success(let newsData):
+                    handleResponseForSuccess(data: newsData,
+                                             onCompletion: onCompletion)
+                case .failure(let error):
+                    handleResponseForFailure(error: error,
+                                             onCompletion: onCompletion)
             }
-
         }
     }
 
-    private func handleResponseForSuccess(data: Data) {
-        let parser = parse(data: data)
+    private func handleResponseForSuccess(data: Data,
+                                          onCompletion: NewsListResponse) {
+        let parsedModel = parse(data: data)
+        onCompletion(.success(parsedModel))
     }
 
-    private func handleResponseForFailure(error: NetworkError) {
-
+    private func handleResponseForFailure(error: NetworkError,
+                                          onCompletion: NewsListResponse) {
+        onCompletion(.failure(error))
     }
 }
