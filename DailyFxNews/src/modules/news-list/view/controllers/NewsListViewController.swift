@@ -14,7 +14,7 @@ class NewsListViewController: UIViewController {
     private let cellID = "NewsTableViewCell"
     private var viewModel: NewsListViewModel
     private let xibName = String(describing: NewsListViewController.self)
-    private var dataSource: NewsListTableViewDataSource<NewsCell, News>?
+    private var dataSource: GenericTableViewDataSource<NewsCell, News>?
 
     init(viewModel: NewsListViewModel) {
         self.viewModel = viewModel
@@ -38,7 +38,7 @@ class NewsListViewController: UIViewController {
     private func updateDataSource() {
         guard let unwrappedNews = viewModel.news else {return}
 
-        dataSource = NewsListTableViewDataSource(with: cellID,
+        dataSource = GenericTableViewDataSource(with: cellID,
                                                  items: unwrappedNews,
                                                  configureCell: { cell, news in
                                                     cell.configure(with: news)

@@ -52,9 +52,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func launchApp() {
         rootViewController = UINavigationController()
-        let viewModel = NewsListViewModel()
-        let listView = NewsListViewController(viewModel: viewModel)
-        rootViewController?.viewControllers = [listView]
+        rootViewController?.navigationBar.prefersLargeTitles = true
+        let viewModel = NewsCategoryViewModel()
+        let categoryView = NewsCategoryViewController(viewModel: viewModel)
+        rootViewController?.viewControllers = [categoryView]
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct DailyBriefings: Decodable {
-    var eu: [Eu]?
-    var asia: [Asia]?
-    var usa: [Us]?
+    var eu: [Eu] = []
+    var asia: [Asia] = []
+    var us: [Us] = []
 }

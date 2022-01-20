@@ -12,11 +12,10 @@ typealias NewsListResponse = (Result<News?, Error>) -> Void
 struct NewsListTask {
 
     private var service: Serviceable
-    private var urlString: String
+    private let urlString = "https://content.dailyfx.com/api/v1/dashboard"
 
-    init(with service: Serviceable, urlString: String) {
+    init(with service: Serviceable) {
         self.service = service
-        self.urlString = urlString
     }
 
     var request: URLRequest? {

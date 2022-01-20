@@ -1,5 +1,5 @@
 //
-//  NewsListTableViewDataSource.swift
+//  GenericTableViewDataSource.swift
 //  DailyFxNews
 //
 //  Created by Ronak on 21/11/21.
@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class NewsListTableViewDataSource<CELL: UITableViewCell, T>: NSObject, UITableViewDataSource {
+class GenericTableViewDataSource<CELL: UITableViewCell, T>: NSObject, UITableViewDataSource {
 
-    private var cellID: String
+    private let cellID: String
     private var items: [T] = []
     var configureCell: (CELL, T) -> () = {_,_ in }
 
@@ -25,6 +25,10 @@ class NewsListTableViewDataSource<CELL: UITableViewCell, T>: NSObject, UITableVi
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         items.count
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 
     func tableView(_ tableView: UITableView,
